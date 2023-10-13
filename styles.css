@@ -128,6 +128,17 @@ body {
 
 }
 
+.logo {
+
+    position: absolute;
+    top: 10px;
+    width: 400px;
+    left: calc((100% - 400px) / 2);
+    border: none;
+    z-index: 10;
+    cursor: pointer;
+}
+
 .cart {
     width: 30px;
 
@@ -284,11 +295,11 @@ body {
 
 .picture1 img {
 
-    background-size: 190%;
+    background-size: 110%;
     width: 100%;
     height: 100%;
     background-image: url("img/picture_main.jpg") ;
-    background-position: -113px -0px;
+    background-position: -0px -0px;
 
     transition: all .5s ease-out;
 
@@ -1285,28 +1296,26 @@ var(--tg-theme-button-text-color)
 */
 
 
-
-
-
-
-
-
 .btn_back {
-    width: 19%;
+    width: 10%;
     height: 28px;
+    margin-top:30px;
+    margin-left:5px;
 
-    color: var(--font-color-categories-dark);
+    color: var(--header-color);
 
-    border: 1px solid #fff;
+
     border-radius: 12px;
     line-height: 28px;
 
     font-weight: 100;
-    font-size: 20px;
+    font-size: 28px;
+
     /*transition: background .2s linear;*/
 
 
-    background: transparent;
+
+    background: white;
 
     transition: all 0.8s;
 
@@ -1315,8 +1324,8 @@ var(--tg-theme-button-text-color)
 
 
 
-    text-shadow: 1px 1px 0 #573e41;
-    color: #fff;
+
+    color: var(--header-color);
     font-family: 'PFDinDisplayProLight';
 
 }
