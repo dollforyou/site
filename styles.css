@@ -138,9 +138,9 @@ body {
 
 
     top: calc(width*0.03);
-    width: 70%;
+    width: 60%;
     /*left: calc((100% - 300px) / 2);*/
-    left: 15%;
+    left: 20%;
     border: none;
     z-index: 10;
     cursor: pointer;
@@ -1599,7 +1599,7 @@ color: #999;
     top: 0px;
 
 
-    height: 33px;
+    height: 20px;
 
     align-items:center; /* Центрируем элементы по вертикали */
 
@@ -1608,7 +1608,7 @@ color: #999;
 }
 .price-amount-total div{
     width: 100%;
-    margin-left: 2%;
+    margin-left: 10px;
 
     display: flex;
     /*justify-content: center;*/
@@ -1641,26 +1641,22 @@ color: #999;
     cursor: pointer;
 }
 
-
-
-.price-amount-total>div>img:nth-child(1) {
-
-    width:20px;
-
-
+  .price-amount-total>div>h2:nth-child(1) {
+    width:90px;
+    text-align: left;
   }
 
   .price-amount-total>div>h2:nth-child(2) {
-    width:5%;
-
-
+    width:90px;
+    text-align: left;
   }
-  .price-amount-total>div>img:nth-child(3) {
+
+  .price-amount-total>div>img {
     width:20px;
   }
-  .price-amount-total>div>h2:nth-child(4) {
-    width:35%;
-    text-align: right;
+  .price-amount-total>div>h2:nth-child(3) {
+    width:30px;
+    text-align: center;
   }
   .price-amount-total>div>h2:nth-child(5) {
     margin-left: 3%;

@@ -25,6 +25,7 @@ const selectOptions_weights = [
   
 const selectOptions_default = [{'select_1': 1,'select_2': '1', 'select_3': '1'}];
 
+
 function goBack() {
   window.history.back();
 }
@@ -178,6 +179,7 @@ function showCartContainer() {
     //const resultPrice = itemQuantity*priceProductValue
 
     cartItem.insertAdjacentHTML('beforeend',`
+    <!-- -->
     <div class="cartContainer" id=${itemId}>
       <div>
         <img class="image-container" src=${cartProduct.images[0]}></img>
@@ -204,7 +206,7 @@ function showCartContainer() {
             </div>
           </div>
         </div>
-
+        <!-- 
         <div>
           <h2 class="h_style_p_a_t">Вес: </h2>
           <div id=weightSelect class=weightSelect>
@@ -239,17 +241,21 @@ function showCartContainer() {
             <option value="18">10 кг</option>
           </select>
         </div>
-
+        -->
+        <!-- 
         <div>
           <h2 class="h_style_p_a_t">Тип: </h2>
           <select class="selectoptions" id="select_2" size="1"><option value="1">П/п торт (2000 руб / кг)</option><option value="2">Классический торт (1800руб. / кг)</option></select>
         </div>
+        -->
+        <!-- 
         <div>
           <h2 class="h_style_p_a_t">Начинка: </h2>
           <select class="selectoptions" id="select_3" size="1">
           ${cartProduct.options1.map((option_value, index) => `<option value="${index + 1}">${option_value}</option>`).join('')}
           </select>
         </div>
+        -->
       </div>
     </div>`);
 
@@ -325,7 +331,7 @@ function showCartContainer_itemQuantity_resultPrice() {
   if (resultPriceTotal === 0){
     itemDelivery.style.display = 'none';
     itemInfocart.style.display = 'none';
-    itemDressing.style.display = 'none';
+    if (itemDressing) {itemDressing.style.display = 'none'};
     const cartItem = document.querySelector('#cartContainer');
     cartItem.remove();
     btn_order.setAttribute("visibility", "false");
@@ -338,7 +344,7 @@ function showCartContainer_itemQuantity_resultPrice() {
 
     itemDelivery.style.display = 'block';
     itemInfocart.style.display = 'block';
-    itemDressing.style.display = 'block';
+    if (itemDressing) {itemDressing.style.display = 'block'};
     btn_order.setAttribute("visibility", "true");
     //btn_order.setAttribute("disabled", "false");
 
@@ -708,7 +714,10 @@ function updateVisibleItemCount() {
 
 //if (JSON.parse(localStorage.getItem('current_page')) === 'index') {
 function product_details_link_Listener() {
-  const detailsButtons = document.querySelectorAll('.image-text-container.image-container');
+  
+  const detailsButtons_index = document.querySelectorAll('.image-text-container');
+  const detailsButtons_cart = document.querySelectorAll('.image-container');
+  const detailsButtons = [...detailsButtons_index, ...detailsButtons_cart];
 
   detailsButtons.forEach(container => {
       container.addEventListener('click', function() {
