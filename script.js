@@ -180,7 +180,7 @@ function showCartContainer() {
     cartItem.insertAdjacentHTML('beforeend',`
     <div class="cartContainer" id=${itemId}>
       <div>
-        <img src=${cartProduct.images[0]}></img>
+        <img class="image-container" src=${cartProduct.images[0]}></img>
         <div>
           <h2 class="h_style_cart">${cartProduct.name}</h2>
 
@@ -639,6 +639,7 @@ function cart_link_Listener() {
 
         cart_link_Listener();
         home_link_Listener();
+        product_details_link_Listener()
 
 
       });
@@ -707,7 +708,7 @@ function updateVisibleItemCount() {
 
 //if (JSON.parse(localStorage.getItem('current_page')) === 'index') {
 function product_details_link_Listener() {
-  const detailsButtons = document.querySelectorAll('.image-text-container');
+  const detailsButtons = document.querySelectorAll('.image-text-container.image-container');
 
   detailsButtons.forEach(container => {
       container.addEventListener('click', function() {
