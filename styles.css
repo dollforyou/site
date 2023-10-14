@@ -2,7 +2,7 @@
 
 :root {
     --photo-aspect-ratio: 0.58; /* посмотреть какие размеры фото - найти пропорции */
-    
+
     --background-color: #a39e9e;
     --header-color: #ffa8b2;
 
@@ -39,7 +39,7 @@
     --weight-font-size: 11px;
     --order-button-font-size: 15px;
 
-    
+
 
 
 
@@ -135,9 +135,11 @@ body {
 .logo {
 
     position: absolute;
-    top: 5px;
-    width: 300px;
-    left: calc((100% - 300px) / 2);
+
+    top: calc(width*0.03);
+    width: 70%;
+    /*left: calc((100% - 300px) / 2);*/
+    left: 15%;
     border: none;
     z-index: 10;
     cursor: pointer;
@@ -145,12 +147,8 @@ body {
 
 .cart {
     width: 30px;
-
-
     position: absolute;
     right: 10px;
-
-
     border: none;
     z-index: 10;
     cursor: pointer;
@@ -977,11 +975,11 @@ body {
 }
 
 .p-title-carousel {
-
+    width: 92%;
     color: var(--font-color-dark);
     font-size: var(--title-font-size);
     padding-top: 0px;
-    word-wrap: break-word;
+    white-space: pre-wrap;
 
 
 }
