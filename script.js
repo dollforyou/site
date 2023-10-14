@@ -185,27 +185,30 @@ function showCartContainer() {
         <img class="image-container" src=${cartProduct.images[0]}></img>
         <div>
           <h2 class="h_style_cart">${cartProduct.name}</h2>
+          <div class=price-amount-total>
+            <div>
+              <h2 class="h_style_p_a_t">Количество:</h2>
+              <img src="img/minus.png" class=minus_amount id=${itemId}></img>
+              <h2 class=h_style_p_a_t id=itemQuantity></h2>
+              <img src="img/plus.png" class=plus_amount id=${itemId}></img>
 
+            </div>
+          </div>
+          <div class=price-amount-total>
+            <div>
+              <h2 class="h_style_p_a_t">Стоимость:</h2>
+              <h2 class=h_style_p_a_t id=resultPrice></h2>
+              <img src="img/cross.png" class=cross_amount id=${itemId}></img>
+
+            </div>
+          </div>
         </div>
       </div>
 
       <div class=select-options>
 
-        <div>
-          <h2 class="h_style_p_a_t">Количество:</h2>
 
 
-          <div class=price-amount-total>
-            <div>
-              <img src="img/minus.png" class=minus_amount id=${itemId}></img>
-              <h2 class=h_style_p_a_t id=itemQuantity></h2>
-              <img src="img/plus.png" class=plus_amount id=${itemId}></img>
-              <h2 class="h_style_p_a_t">Стоимость:</h2>
-              <h2 class=h_style_p_a_t id=resultPrice></h2>
-              <img src="img/cross.png" class=cross_amount id=${itemId}></img>
-            </div>
-          </div>
-        </div>
         <!-- 
         <div>
           <h2 class="h_style_p_a_t">Вес: </h2>
@@ -304,10 +307,11 @@ function showCartContainer_itemQuantity_resultPrice() {
     const priceProductValue = priceProduct['price'];
     //const weightProductValue = weightProduct['weight'];
 
-    const weightValue = 1 + optionsDataWeight*0.5;
+    //const weightValue = 1 + optionsDataWeight*0.5;
 
-    const resultPrice = itemQuantity*priceProductValue*weightValue ;
-
+    //const resultPrice = itemQuantity*priceProductValue*weightValue ;
+    
+    const resultPrice = itemQuantity*priceProductValue;
 
     //const h2_itemQuantity = cartItem.querySelector(`#itemQuantity[id="${itemId}"]`);
     const h2_itemQuantity = cartItem_itemId.querySelector('#itemQuantity');
