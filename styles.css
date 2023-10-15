@@ -1100,8 +1100,8 @@ body {
     /*display: flex;*/
     flex-direction: column; /* Элементы располагаются вертикально */
     align-items: center; /* Центрируем элементы по вертикали */
-    /*width: 96%;*/
-    aspect-ratio: var(--photo-aspect-ratio);
+    width: 96%;
+    aspect-ratio: 0.85;
 
     /*height: 280px;*/
     cursor: pointer;
@@ -1157,7 +1157,7 @@ body {
 .p-title {
     position: relative;
     left: 5%;
-    width: 90%;
+
     min-height: 50px;
     color: var(--font-color-dark);
     font-size: var(--title-font-size);
