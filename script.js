@@ -72,7 +72,7 @@ function assignCheckboxBlocks() {
 
   cb_item.insertAdjacentHTML('beforeend',`<div class="cb_item">
   <input type="checkbox" id="checkbox1" name="category" value="all" onchange="handleCheckboxChange(this)">
-  <label for="checkbox1">все торты</label><br>
+  <label for="checkbox1">Все</label><br>
   </div>${selectOptions_categories.map((option_value, index) => `<div class="cb_item">
   <input type="checkbox" id="checkbox${index + 2}" name="category" value="${option_value.name}" onchange="handleCheckboxChange(this)">
   <label for="checkbox${index + 2}">${option_value.name}</label><br>
