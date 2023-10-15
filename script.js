@@ -387,10 +387,15 @@ function showCartContainer_itemQuantity_resultPrice() {
 
           const inputDate = document.querySelector('input[type="date"]');
 
-          if (cartInfo['date']) {
-          } else {
-            cartInfo['date'] = inputDate.min;
-            };
+          if (inputDate) {
+            if (cartInfo['date']) {
+            } else {
+              cartInfo['date'] = inputDate.min;
+              };
+            }
+          else {
+            cartInfo['date'] = 0
+          }
 
           localStorage.setItem('cartInfo', JSON.stringify(cartInfo));
 
@@ -645,7 +650,7 @@ function cart_link_Listener() {
         listenerRadioChange();
         listenerInputChange();
 
-        setMinData ();
+        //setMinData ();
 
         cart_link_Listener();
         home_link_Listener();
