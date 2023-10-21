@@ -1,27 +1,8 @@
-const products = [{'id': '1','name': 'Девочка Лаванда','categories':['Девочки'],'description': '-Рост куколки 27 см.;\n-Куколка сшита из хлопка 100%ого;\n-Наполнитель-синтепух(высокого качества);\n-Ручки сгибаются (в ручках вставлена проволочка)\n-Лицо- расписано акрилом и пастелью;\n-Волосы – искусственные трессы (гипоаллергенные);\n-Одежда съёмная-хлопок. Обувь съемная – искусственная кожа;\n-Детали куклы(ножки,ручки)на пуговичном креплении;\n-Голова(нитевое крепление)поворачивается.','price': '4000','weight': '0','images': ['photos/1_1.jpg','photos/1_2.jpg','photos/1_3.jpg','photos/1_4.jpg','photos/1_5.jpg'],'options1':[]},{'id': '2','name': 'Девочка Морячка','categories':['Девочки'],'description': '-Рост куколки 27 см.; \n-Куколка сшита из хлопка 100%ого;\n -Наполнитель-синтепух(высокого качества); \n-Ручки сгибаются (в ручках вставлена проволочка)\n -Лицо- расписано акрилом и пастелью; \n-Волосы – искусственные трессы (гипоаллергенные); \n-Одежда съёмная-хлопок. \nОбувь съемная – искусственная кожа;\n -Детали куклы(ножки,ручки)на пуговичном креплении;\n -Голова(нитевое крепление)поворачивается.','price': '4000','weight': '0','images': ['photos/2_1.jpg','photos/2_2.jpg','photos/2_3.jpg','photos/2_4.jpg','photos/2_5.jpg'],'options1':[]},{'id': '3','name': 'Девочка Роза','categories':['Девочки'],'description': '-Рост куколки 27 см.;\n -Куколка сшита из хлопка 100%ого;\n-Наполнитель-синтепух(высокого качества);\n -Ручки сгибаются (в ручках вставлена проволочка) \n-Лицо- расписано акрилом и пастелью; \n-Волосы – искусственные трессы (гипоаллергенные);\n-Одежда съёмная-хлопок. \nОбувь съемная – искусственная кожа; \n-Детали куклы(ножки,ручки)на пуговичном креплении; \n-Голова(нитевое крепление)поворачивается.','price': '4000','weight': '0','images': ['photos/3_1.jpg','photos/3_2.jpg','photos/3_3.jpg','photos/3_4.jpg','photos/3_5.jpg'],'options1':[]},{'id': '4','name': 'Девочка Горошинка','categories':['Девочки'],'description': '-Рост куколки 27 см.; \n-Куколка сшита из хлопка 100%ого;\n -Наполнитель-синтепух(высокого качества); \n-Ручки сгибаются (в ручках вставлена проволочка) \n-Лицо- расписано акрилом и пастелью; \n-Волосы – искусственные трессы (гипоаллергенные);\n -Одежда съёмная-хлопок. \nОбувь съемная – искусственная кожа; \n-Детали куклы(ножки,ручки)на пуговичном креплении; \n-Голова(нитевое крепление)поворачивается.','price': '4000','weight': '0','images': ['photos/4_1.jpg','photos/4_2.jpg','photos/4_3.jpg','photos/4_4.jpg','photos/4_5.jpg'],'options1':[]},{'id': '5','name': 'Мальчуган','categories':['Мальчики'],'description': '-Рост куколки 27 см.; \n-Куколка сшита из хлопка 100%ого;\n -Наполнитель-синтепух(высокого качества); \n-Ручки сгибаются (в ручках вставлена проволочка) \n-Лицо- расписано акрилом и пастелью;\n -Волосы – искусственные трессы (гипоаллергенные); \n-Одежда съёмная-хлопок. \nОбувь съемная – искусственная кожа; \n-Детали куклы(ножки,ручки)на пуговичном креплении;\n -Голова(нитевое крепление)поворачивается.','price': '4000','weight': '0','images': ['photos/5_1.jpg','photos/5_2.jpg','photos/5_3.jpg','photos/5_4.jpg','photos/5_5.jpg'],'options1':[]},];
+const products = [{'id': '1','name': 'Девочка Лаванда','categories':['Девочки'],'description': '-Рост куколки 27 см.;\n-Куколка сшита из хлопка 100%ого;\n-Наполнитель-синтепух(высокого качества);\n-Ручки сгибаются (в ручках вставлена проволочка)\n-Лицо- расписано акрилом и пастелью;\n-Волосы – искусственные трессы (гипоаллергенные);\n-Одежда съёмная-хлопок. Обувь съемная – искусственная кожа;\n-Детали куклы(ножки,ручки)на пуговичном креплении;\n-Голова(нитевое крепление)поворачивается.','price': '4000','weight': '0','images': ['photos/1_1.jpg','photos/1_2.jpg','photos/1_3.jpg','photos/1_4.jpg','photos/1_5.jpg'],'options1':[]},{'id': '2','name': 'Девочка Морячка','categories':['Девочки'],'description': '-Рост куколки 25 см.; \n-Куколка сшита из хлопка 100%ого;\n -Наполнитель-синтепух(высокого качества); \n-Ручки сгибаются (в ручках вставлена проволочка)\n -Лицо- расписано акрилом и пастелью; \n-Волосы – искусственные трессы (гипоаллергенные); \n-Одежда съёмная-хлопок. \nОбувь съемная – искусственная кожа;\n -Детали куклы(ножки,ручки)на пуговичном креплении;\n -Голова(нитевое крепление)поворачивается.','price': '4000','weight': '0','images': ['photos/2_1.jpg','photos/2_2.jpg','photos/2_3.jpg','photos/2_4.jpg','photos/2_5.jpg'],'options1':[]},{'id': '3','name': 'Девочка Роза','categories':['Девочки'],'description': '-Рост куколки 24 см.;\n -Куколка сшита из хлопка 100%ого;\n-Наполнитель-синтепух(высокого качества);\n -Ручки сгибаются (в ручках вставлена проволочка) \n-Лицо- расписано акрилом и пастелью; \n-Волосы – искусственные трессы (гипоаллергенные);\n-Одежда съёмная-хлопок. \nОбувь съемная – искусственная кожа; \n-Детали куклы(ножки,ручки)на пуговичном креплении; \n-Голова(нитевое крепление)поворачивается.','price': '4000','weight': '0','images': ['photos/3_1.jpg','photos/3_2.jpg','photos/3_3.jpg','photos/3_4.jpg','photos/3_5.jpg'],'options1':[]},{'id': '4','name': 'Девочка Горошинка','categories':['Девочки'],'description': '-Рост куколки 25 см.; \n-Куколка сшита из хлопка 100%ого;\n -Наполнитель-синтепух(высокого качества); \n-Ручки сгибаются (в ручках вставлена проволочка) \n-Лицо- расписано акрилом и пастелью; \n-Волосы – искусственные трессы (гипоаллергенные);\n -Одежда съёмная-хлопок. \nОбувь съемная – искусственная кожа; \n-Детали куклы(ножки,ручки)на пуговичном креплении; \n-Голова(нитевое крепление)поворачивается.','price': '4000','weight': '0','images': ['photos/4_1.jpg','photos/4_2.jpg','photos/4_3.jpg','photos/4_4.jpg','photos/4_5.jpg'],'options1':[]},{'id': '5','name': 'Мальчуган','categories':['Мальчики'],'description': '-Рост куколки 26 см.; \n-Куколка сшита из хлопка 100%ого;\n -Наполнитель-синтепух(высокого качества); \n-Ручки сгибаются (в ручках вставлена проволочка) \n-Лицо- расписано акрилом и пастелью;\n -Волосы – искусственные трессы (гипоаллергенные); \n-Одежда съёмная-хлопок. \nОбувь съемная – искусственная кожа; \n-Детали куклы(ножки,ручки)на пуговичном креплении;\n -Голова(нитевое крепление)поворачивается.','price': '4000','weight': '0','images': ['photos/5_1.jpg','photos/5_2.jpg','photos/5_3.jpg','photos/5_4.jpg','photos/5_5.jpg'],'options1':[]},];
 
 const selectOptions_categories = [{'id': '1','name': 'Девочки', 'price': '4000'},{'id': '2','name': 'Мальчики', 'price': '4000'},];
 
-const selectOptions_weights = [
-    {'id': '1', 'weight': '1.5'},
-    {'id': '2', 'weight': '2'},
-    {'id': '3', 'weight': '2.5'},
-    {'id': '4', 'weight': '3'},
-    {'id': '5', 'weight': '3.5'},
-    {'id': '6', 'weight': '4'},
-    {'id': '7', 'weight': '4.5'},
-    {'id': '8', 'weight': '5'},
-    {'id': '9', 'weight': '5.5'},
-    {'id': '10', 'weight': '6'},
-    {'id': '11', 'weight': '6.5'},
-    {'id': '12', 'weight': '7'},
-    {'id': '13', 'weight': '7.5'},
-    {'id': '14', 'weight': '8'},
-    {'id': '15', 'weight': '8.5'},
-    {'id': '16', 'weight': '9'},
-    {'id': '17', 'weight': '9.5'},
-    {'id': '18', 'weight': '10'},
-];
+const selectOptions_weights = [];
   
 const selectOptions_default = [{'select_1': 1,'select_2': '1', 'select_3': '1'}];
 
@@ -182,27 +163,32 @@ function showCartContainer() {
     <!-- -->
     <div class="cartContainer" id=${itemId}>
       <div>
-        <img class="image-container" src=${cartProduct.images[0]}></img>
+      <img class="image-container" src=${cartProduct.images[0]}></img>
+      <div>
+        <div class=price-amount-total_1>
         <div>
           <h2 class="h_style_cart">${cartProduct.name}</h2>
-          <div class=price-amount-total>
-            <div>
-              <h2 class="h_style_p_a_t">Количество:</h2>
-              <img src="img/minus.png" class=minus_amount id=${itemId}></img>
-              <h2 class=h_style_p_a_t id=itemQuantity></h2>
-              <img src="img/plus.png" class=plus_amount id=${itemId}></img>
+          <img src="img/cross.png" class=cross_amount id=${itemId}></img>
+        </div>
+        </div>
+        <div class=price-amount-total>
+          <div>
+            <h2 class="h_style_p_a_t">Количество:</h2>
+            <img src="img/minus.png" class=minus_amount id=${itemId}></img>
+            <h2 class=h_style_p_a_t id=itemQuantity></h2>
+            <img src="img/plus.png" class=plus_amount id=${itemId}></img>
 
-            </div>
-          </div>
-          <div class=price-amount-total>
-            <div>
-              <h2 class="h_style_p_a_t">Стоимость:</h2>
-              <h2 class=h_style_p_a_t id=resultPrice></h2>
-              <img src="img/cross.png" class=cross_amount id=${itemId}></img>
-
-            </div>
           </div>
         </div>
+        <div class=price-amount-total>
+          <div>
+            <h2 class="h_style_p_a_t">Стоимость:</h2>
+            <h2 class=h_style_p_a_t id=resultPrice></h2>
+
+
+          </div>
+        </div>
+      </div>
       </div>
 
       <div class=select-options>
@@ -775,7 +761,7 @@ function product_details_link_Listener() {
 
             function showPrice() {
               const priceContainer = document.querySelector('#product-buttons-container-order');
-              priceContainer.insertAdjacentHTML('beforeend',`<p class="p-price">${product.price} руб/</p>
+              priceContainer.insertAdjacentHTML('beforeend',`<p class="p-price">${product.price} руб.</p>
                 <button class="btn_order btn" id="btn${product.id}" data-item-id="${product.id}">В корзину</button>
                 <span class=product_in_cart_amount id="${product.id}" style="display: none;"></span>
                 <img class=cartPlus src="img/cart+.png"></img>`);

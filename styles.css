@@ -1711,6 +1711,56 @@ color: #999;
 
 
 
+
+
+
+  .price-amount-total_1{
+
+    display: inline-block;
+
+
+    position: relative;
+    width: 100%;
+    top: 0px;
+
+
+    height: 30px;
+
+    align-items:center; /* Центрируем элементы по вертикали */
+
+
+
+}
+.price-amount-total_1 div{
+    width: 100%;
+    margin-left: 10px;
+
+    display: flex;
+    /*justify-content: center;*/
+    align-items: center;
+    text-align: center;
+
+    z-index: 11;
+}
+
+
+  .price-amount-total_1>div>h2:nth-child(1) {
+    width:80%;
+    text-align: left;
+  }
+
+  .price-amount-total_1>div>img:nth-child(2) {
+    height: 20px;
+    margin-top: 0px;
+    text-align: left;
+
+
+    border: none;
+    z-index: 10;
+    cursor: pointer;
+  }
+
+
   .select-options{
 
     display: inline-block;
