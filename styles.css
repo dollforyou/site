@@ -1923,6 +1923,8 @@ color: #999;
 
 #makeOrderButton {
     z-index: 9;
+    height: 40px;
+    margin-bottom: 20px;
 
 }
 
@@ -1946,10 +1948,12 @@ color: #999;
     top: 5px;
     left: 4%;
     width: 92%;
+    height: 100%;
     display: flex;
     justify-content: center;
 
     text-align: center;
+    align-items: center;
 
     border: none;
 
