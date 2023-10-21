@@ -163,7 +163,7 @@ function showCartContainer() {
     <!-- -->
     <div class="cartContainer" id=${itemId}>
       <div>
-      <img class="image-container" src=${cartProduct.images[0]}></img>
+      <img class="image-container" data-product-id="${itemId}" src=${cartProduct.images[0]}></img>
       <div>
         <div class=price-amount-total_1>
         <div>
